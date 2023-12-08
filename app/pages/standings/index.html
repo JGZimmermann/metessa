@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/materialize-css/dist/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="/assets/resources/images/logoclean.png">
+    <link rel="stylesheet" href="/app/style.css">
+</head>
+<body onload="mostrarClassificacao()">
+    <div id="menu"></div>
+    <h1 class="center">Brasileirão</h1>
+    <div id="caixa">
+    <div class="input-field col s12">
+      <select id="anoSelect">
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+      <label>Ano</label>
+    </div>
+    </div>
+    <div class="container">
+      <div id="teams"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="/app/index.js"></script>
+    <script src="/app/services/teams.js"></script>
+</body>
+</html>

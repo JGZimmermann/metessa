@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/materialize-css/dist/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="/assets/resources/images/logoclean.png">
+    <link rel="stylesheet" href="/app/style.css">
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+</head>
+<body>
+    <div id="menu"></div>
+    <div class="container">
+        <form id="myForm" class="col s12">
+          <div class="row center">
+            <h1 class="animate__animated animate__fadeInDown">Login</h1>
+          </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="Informe um email válido" data-success="Email válido"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                <label for="password">Senha</label>
+                <span class="helper-text" data-error="Senha inválida" data-success="Senha válida"></span>
+              </div>
+              <p>*Senha deve conter no mínimo 8 caracteres, caracter especial e numero</p>
+            </div>
+            <div class="row center">
+              <a class="btn waves-effect black" onclick="login()">Enviar</a>
+            </div>
+            <div class="row">
+              <a href="/app/pages/register/index.html">Ainda não possui login? Cadastre-se</a>
+            </div>
+          </form>
+    </div>
+    <div id="footer"></div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="/app/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
