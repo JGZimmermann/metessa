@@ -1,4 +1,4 @@
-const apiKey = 'fd0a8dbb8b157f54a8444e8fdda712d0'; 
+const apiKey = 'chave_da_api'; 
 let divTimes = document.getElementById("teams")
 
 function mostrarClassificacao(){
